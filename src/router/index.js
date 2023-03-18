@@ -10,7 +10,7 @@ const routes = [
         component: HomePage
     },
     {
-        path: '/error',
+        path: '/:catchAll(.*)',
         component: Error,
     },
     {

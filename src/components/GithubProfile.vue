@@ -7,13 +7,13 @@
     </div>
   </div>
     <!-- <div>
-      <img class="h-12 w-12 rounded-full" :src="profile.avatar_url" />
       <p>{{ profile.login }}</p>
+      <img class="h-12 w-12 rounded-full" :src="profile.avatar_url" />
       <p>Hellow world</p>
     </div> -->
     <div class="grid gap-2 grid-cols-2 place-items-center">
-    <div v-for="(repo, index) in repos" :key="index" class="border-solid border-2 border-black-100 w-10/12 h-40 p-7">
-      <div class="flex justify-between">
+      <div v-for="(repo, index) in repos" :key="index" class="border-solid border-2 border-black-100 w-10/12 h-40 p-7">
+        <div class="flex justify-between">
         <p class="self-center text-lg font-semibold">{{ repo.name }}</p>
         <p class="border-solid border-2 border-black-800 rounded-md p-2 w-20 h-10 flex items-center justify-center">{{repo.visibility}}</p>
       </div>
